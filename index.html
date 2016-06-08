@@ -1,7 +1,81 @@
 <!DOCTYPE html>
-<html>
-<head></head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olivia Brouwer</title>
+
+
+    <!-- Bootstrap implementation for easy grid layout-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Full Hover implementation for fancy animations (if needed) -->
+    <!-- <link rel="stylesheet" href="Hover-master/css/hover.css" media="all"> -->
+
+    <!--Main CSS stylesheet link-->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
 <body>
-<p>Hello world.</p>
+<section id="splash">
+  <div class="jumbotron text-center">
+    <div class="container">
+       <div class="row text-center">
+         <div class="col-md-6 text-center col-lg-offset-3">
+
+   			 <div id="mainimage" class="carousel carousel-fade slide" data-ride="carousel" data-interval="9000"> <!-- adjust timing (in milliseconds) by changing the data-interval value, 25000 is default -->
+			   	<div class="carousel-inner" role="listbox">
+
+			    	<div class="item active">
+                    <!-- This line below is where the path for the big picture on each slide goes. Works best with square images of large size -->
+            	  		<img id="first-slide" src="img/painting1.jpg" alt="artwork">
+         			</div>
+
+            <!-- just copy and paste this block as many times as needed, changing id to "third-slide" etc and the src to the path of the picture -->
+     				<div class="item">
+						<img id="second-slide" src="img/painting2.jpg" alt="artwork">
+        			</div>
+
+                    <div class="item">
+						<img id="third-slide" src="img/painting3.jpg" alt="artwork">
+        			</div>
+
+                    <div class="item">
+						<img id="fourth-slide" src="img/painting4.jpg" alt="artwork">
+        			</div>
+
+     </div>
+    </div>
+
+
+       	 </div>
+       </div>
+       <div class="row">
+       	<div class="col-xs12">
+          <img id="olivialogo" src="img/oliviabrouwer.svg" alt="Olivia Brouwer">
+
+          <div class="linksection">
+              <a id="biobutton" class="btn btn-primary btn-lg hvr-grow hvr-fade" href="#" role="button">bio</a>
+              <a id="gallerybutton" class="btn btn-primary btn-lg hvr-grow hvr-fade" href="portfolio.html" role="button">gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer id="copyright" class="text-right">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p id="copyright-text">Copyright © Olivia Brouwer, 2016. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
